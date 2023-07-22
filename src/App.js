@@ -6,12 +6,19 @@ import Header from './Components/Header';
 function App() {
 
   const [isSideMenuOpen, setIsSideMenuOpen] = useState(false)
-  
+
   return (
     <>
-      <Layout>
-        <Header/>
+      <Layout
+        isSideMenuOpen={isSideMenuOpen}
+        setIsSideMenuOpen={setIsSideMenuOpen}
+      >
+        <Header
+          isSideMenuOpen={isSideMenuOpen}
+          setIsSideMenuOpen={setIsSideMenuOpen}
+        />
       </Layout>
+      {console.log(isSideMenuOpen)}
     </>
   );
 }

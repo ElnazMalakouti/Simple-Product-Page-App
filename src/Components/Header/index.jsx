@@ -1,10 +1,10 @@
-const Header = () => {
+const Header = ({isSideMenuOpen, setIsSideMenuOpen}) => {
     return (
         <>
             <div className="w-full h-24 px-4 flex justify-between items-center  md:border-b-[1px]">
 
                 <div className="h-full flex gap-4 md:gap-8 justify-center items-center">
-                    <button className="md:hidden">
+                    <button className="md:hidden" onClick={() => setIsSideMenuOpen(true)}>
                         <img alt="iconMenu" src="/images/icon-menu.svg" />
                     </button>
                     <p className="font-[Bold] text-2xl">sneakers</p>
