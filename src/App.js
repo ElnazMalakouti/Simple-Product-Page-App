@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import './App.css';
 import Layout from './Components/Layout';
-import Header from './Components/Header';
+import Main from './Components/Main';
+
 
 function App() {
 
@@ -13,12 +14,8 @@ function App() {
         isSideMenuOpen={isSideMenuOpen}
         setIsSideMenuOpen={setIsSideMenuOpen}
       >
-        <Header
-          isSideMenuOpen={isSideMenuOpen}
-          setIsSideMenuOpen={setIsSideMenuOpen}
-        />
+        <Main/>
       </Layout>
-      {console.log(isSideMenuOpen)}
     </>
   );
 }
